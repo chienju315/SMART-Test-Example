@@ -22,7 +22,7 @@
         <h4>Medications</h4>
         <div id="meds">Loading...</div>
         <script type="text/javascript">
-            FHIR.oauth2.ready(client => client.request(client.user.fhirUser)).then(function(client) {
+            FHIR.oauth2.ready().then(function(client) {
                 
                 // Render the current patient (or any error)
                 client.patient.read().then(
