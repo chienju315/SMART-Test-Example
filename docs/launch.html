@@ -11,13 +11,13 @@
 
               // The client_id that you should have obtained after registering a client at
               // the EHR.
-              clientId: "my_web_app",
+              clientId: 'my_web_app',
 
               // The scopes that you request from the EHR. In this case we want to:
               // launch            - Get the launch context
               // openid & fhirUser - Get the current user
               // patient/*.read    - Read patient data
-              scope: "patient/*.read launch online_access openid profile",
+              scope: 'patient/*.read launch online_access profile',
 
               // Typically, if your redirectUri points to the root of the current directory
               // (where the launchUri is), you can omit this option because the default value is
@@ -28,4 +28,5 @@
         </script>
     </body>
 </html>
+
 
